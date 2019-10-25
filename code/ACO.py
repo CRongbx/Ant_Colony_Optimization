@@ -289,7 +289,7 @@ class TSP(object):
             # 遍历每一只蚂蚁
             for ant in self.ants:
                 # 搜索一条路径
-                ant.search_path()
+                ant._search_path()
                 # 与当前最优蚂蚁比较
                 if ant.total_distance < self.best_ant.total_distance:
                     # 更新最优解
